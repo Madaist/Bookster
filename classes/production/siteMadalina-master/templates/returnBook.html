@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Borrow book</title>
+</head>
+<body>
+
+<form th:action="@{/returnBook}"  th:object="${book}" method="POST">
+    <div class="container">
+        <div>
+            <label for = "title"><b>Enter the book you want to return</b></label>
+            <input type="text" placeholder="Title" name="title" id="title" th:field="*{title}" required>
+        </div>
+
+        <div>
+            <button class = "btn" type="submit" name="action">Submit</button>
+        </div>
+    </div>
+</form>
+</body>
+</html>
