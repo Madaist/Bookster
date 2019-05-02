@@ -69,6 +69,14 @@ public class User {
         this.email = email;
     }
 
+    public User(String lastName, String firstName, String userName, String password, String email) {
+        this.lastName = lastName;
+        this.firstName = firstName;
+        this.userName = userName;
+        this.password = password;
+        this.email = email;
+    }
+
     public User(){}
 
     @Column(name = "id", nullable = false)
