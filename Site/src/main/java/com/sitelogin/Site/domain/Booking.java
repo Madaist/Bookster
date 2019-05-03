@@ -1,9 +1,12 @@
 package com.sitelogin.Site.domain;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
 import javax.persistence.*;
 
 @Entity
 @Table(name = "booking_tbl")
+@JsonIgnoreProperties
 public class Booking {
 
     @EmbeddedId
